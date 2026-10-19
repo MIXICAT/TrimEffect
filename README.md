@@ -10,7 +10,7 @@ A Paper plugin for Minecraft **1.21.11**. Wearing armor with matching trim patte
 - Effect rules and thresholds are configurable in `plugins/TrimEffect/config.yml`.
 
 ## Build
-Requires JDK 21 and Gradle.
+Requires JDK 25 and Gradle.
 
 From this folder, run:
 
