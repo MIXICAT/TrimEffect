@@ -1,6 +1,6 @@
 # TrimEffect
 
-A Paper plugin for Minecraft **1.21.11**. Wearing armor with matching trim patterns grants potion effects.
+A Paper plugin for Minecraft **26.3**. Wearing armor with matching trim patterns grants potion effects.
 
 ## Rules
 - Counts the four equipped armor slots: helmet, chestplate, leggings, boots.
