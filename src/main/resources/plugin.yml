@@ -1,0 +1,76 @@
+name: TrimEffects
+version: '${version}'
+main: dev.example.trimeffects.TrimEffectsPlugin
+api-version: '26.3'
+description: Armor trim specialization, Ascension, PvP rewards, and SMP season management.
+commands:
+  trimeffect:
+    description: Manage armor trim effects and SMP seasons
+    usage: /trimeffect <help|list|info|status|toggle|smp|admin>
+    aliases: [te, trimeffects]
+    permission: trimeffects.use
+permissions:
+  trimeffects.use:
+    description: Use normal TrimEffects player commands
+    default: true
+  trimeffects.inspect:
+    description: Inspect another online player's trim setup
+    default: op
+  trimeffects.history:
+    description: View recorded TrimEffects history
+    default: true
+  trimeffects.admin:
+    description: Legacy administrative permission; grants all TrimEffects admin permissions
+    default: op
+    children:
+      trimeffects.admin.help: true
+      trimeffects.admin.reload: true
+      trimeffects.admin.debug: true
+      trimeffects.admin.restrict: true
+      trimeffects.admin.items: true
+      trimeffects.admin.player: true
+      trimeffects.admin.audit: true
+      trimeffects.admin.diagnose: true
+      trimeffects.admin.smp.lifecycle: true
+      trimeffects.admin.smp.season: true
+      trimeffects.admin.smp.announce: true
+      trimeffects.admin.smp.players: true
+      trimeffects.admin.smp.settings: true
+      trimeffects.admin.smp.maintenance: true
+      trimeffects.admin.smp.schedule: true
+      trimeffects.admin.smp.export: true
+  trimeffects.admin.help:
+    default: op
+  trimeffects.admin.reload:
+    default: op
+  trimeffects.admin.debug:
+    default: op
+  trimeffects.admin.restrict:
+    default: op
+  trimeffects.admin.items:
+    default: op
+  trimeffects.admin.player:
+    default: op
+  trimeffects.admin.audit:
+    default: op
+  trimeffects.admin.diagnose:
+    default: op
+  trimeffects.admin.smp.lifecycle:
+    default: op
+  trimeffects.admin.smp.season:
+    default: op
+  trimeffects.admin.smp.announce:
+    default: op
+  trimeffects.admin.smp.players:
+    default: op
+  trimeffects.admin.smp.settings:
+    default: op
+  trimeffects.admin.smp.maintenance:
+    default: op
+  trimeffects.admin.smp.schedule:
+    default: op
+  trimeffects.admin.smp.export:
+    default: op
+  trimeffects.bypass:
+    description: Never receive trim effects
+    default: false
